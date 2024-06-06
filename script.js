@@ -23,11 +23,12 @@ var swiper = new Swiper(".mySwiper", {
 const TileCards =  document.querySelectorAll(".Tiles-card");
 
 TileCards.forEach((TileCard) => {
-   TileCard.addEventListener("click", ()=> {
-     TileCard.classList.toggle("Active");
-   });
+  TileCard.addEventListener("click", ()=> {
+    TileCard.classList.toggle("Active");
+  });
 
-  TileCard.addEventListener("pointerleave", () => {
+
+  TileCard.addEventListener("mouseleave", () => {
     TileCard.classList.remove("Active");
   });
 });
