@@ -23,10 +23,9 @@ var swiper = new Swiper(".mySwiper", {
 const TileCards =  document.querySelectorAll(".Tiles-card");
 
 TileCards.forEach((TileCard) => {
-  TileCard.addEventListener("click", ()=> {
+  TileCard.addEventListener("mousedown", ()=> {
     TileCard.classList.toggle("Active");
   });
-
 
   TileCard.addEventListener("mouseleave", () => {
     TileCard.classList.remove("Active");
